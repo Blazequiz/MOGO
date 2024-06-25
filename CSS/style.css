@@ -43,12 +43,6 @@ p {
   font-size: 30px;
   font-family: var(--font--family);
 }
-.header-list-item {
-  font-family: var(--font--family);
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--main--header--text--color);
-}
 .header-nav {
   display: flex;
 }
@@ -57,6 +51,37 @@ p {
   gap: 55px;
   margin-left: auto;
 }
+/* header`s hovers are starting */
+.header-list-item {
+  font-family: var(--font--family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--main--header--text--color);
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 5px; /* space for the underline */
+}
+
+.header-list-item a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* thickness of the underline */
+  display: block;
+  bottom: 0; /* align underline at the bottom of the link */
+  left: 0; /* start from the left */
+  background: #F38181; /* underline color */
+}
+
+.header-list-item a:hover {
+  color: #F38181; /* text color on hover */
+}
+
+.header-list-item a:hover::after {
+  width: 100%; /* underline will cover the entire width of the link */
+}
+/* header`s hovers are ending */
 /* hero section */
 .hero-section {
   margin-bottom: 104px;

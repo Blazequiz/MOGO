@@ -43,15 +43,6 @@ p {
   font-size: 30px;
   font-family: var(--font--family);
 }
-.header-nav {
-  display: flex;
-}
-.header-list {
-  display: flex;
-  gap: 55px;
-  margin-left: auto;
-}
-/* header`s hovers are starting */
 .header-list-item {
   font-family: var(--font--family);
   font-weight: 400;
@@ -62,7 +53,15 @@ p {
   text-decoration: none;
   padding-bottom: 5px; /* space for the underline */
 }
-
+.header-nav {
+  display: flex;
+}
+.header-list {
+  display: flex;
+  gap: 55px;
+  margin-left: auto;
+}
+/* header`s hovers are starting */
 .header-list-item a::after {
   content: '';
   position: absolute;
@@ -108,6 +107,7 @@ p {
   height: 4px;
   background-color: #F38181;
 }
+
 /* hero section list */
 .hero-section-list {
   display: flex;

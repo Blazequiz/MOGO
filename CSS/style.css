@@ -107,7 +107,9 @@ p {
   height: 4px;
   background-color: #F38181;
 }
-
+.hero-section-list-wrapper {
+  display: flex;
+}
 /* hero section list */
 .hero-section-list {
   display: flex;
@@ -178,6 +180,7 @@ p {
 }
 .footer-input {
   width: 230px;
+  margin-left: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
   border: 1px  solid  #B6B6B6;;

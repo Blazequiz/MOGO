@@ -10,7 +10,7 @@
 .container {
   width: 1230px;
   padding: 0 15px;
-  border: 2px dashed violet;
+  /* border: 2px dashed violet; */
   margin: 0 auto;
 }
 ul {
@@ -162,7 +162,10 @@ p {
   flex-basis: calc((100% - 60px)/3);
   padding: 0;
 }
-/* footer */  
+/* footer 
+  border-top: 2px solid #B6B6B6;
+  width: 1200px;
+*/  
 .footer-section-btn {
   padding: 12px 38px;
   font-family: var(--font--family);
@@ -175,6 +178,8 @@ p {
   border: none;
 }
 .footer-wrapper {
+  border-top: 2px solid #B6B6B6;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
 }
@@ -191,6 +196,7 @@ p {
   color: #b6b6b6;
 }
 .form-second-wrapper {
+  margin-top: 10px;
   display: flex;
   align-items: center;
 }
